@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: the-project
+spec:
+  # Number of pods to run.
+  replicas: 1
+  # The Deployment manages the pods whose labels match this selector...
+  selector:
+    matchLabels:
+      app: the-project
+  # ...and this template describes the pods it creates (their labels must match the selector).
+  template:
+    metadata:
+      labels:
+        app: the-project
+    spec:
+      containers:
+        - name: the-project
+          image: trukise/the_project:1.0
+          # Read by main.go to choose the port the server listens on.
+          env:
+            - name: PORT
+              value: "8080"
+          # Informational: documents the port the container listens on.
+          ports:
+            - containerPort: 8080
