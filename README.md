@@ -3,4 +3,4 @@
 ## Exercises
 
 ### Chapter 2
-* [1.1.](https://github.com/truki/KubernetesSubmissions/tree/main/log_output)
+* [1.1.](https://github.com/truki/KubernetesSubmissions/releases/tag/1.1)
