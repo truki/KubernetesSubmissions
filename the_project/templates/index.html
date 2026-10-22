@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{.Title}}</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #fffaf0;
+      color: #3d3a4b;
+      text-align: center;
+    }
+
+    header {
+      background: linear-gradient(120deg, #ffd166, #ff8c69);
+      padding: 2.5rem 1rem;
+      border-bottom-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.6rem;
+      color: #fff;
+    }
+
+    main {
+      padding: 2rem 1rem;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      color: #8a8698;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>{{.Title}}</h1>
+  </header>
+
+  <main>
+    <p>Get things done, one happy step at a time ✨</p>
+  </main>
+
+  <footer>Running on port {{.Port}}</footer>
+</body>
+</html>
